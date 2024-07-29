@@ -6,6 +6,7 @@ import HeroVideo from '@/components/sections/HeroVideo';
 import Sertificates from '@/components/sections/Sertificates';
 import Slogan from '@/components/sections/Slogan';
 import LatestGames from '@/components/sections/LatestGames';
+import FAQ from '@/components/sections/FAQ';
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
                 <LatestGames />
                 <Sertificates />
                 <Slogan />
+                <FAQ />
             </div>
         </main>
     );
