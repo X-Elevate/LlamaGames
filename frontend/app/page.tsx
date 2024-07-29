@@ -1,6 +1,8 @@
 "use client"
-import HeroVideo from '@/sections/HeroVideo';
-import WhoWeAre from '@/sections/WhoWeAre';
+import HeroVideo from '@/app/sections/HeroVideo';
+
+import WhoWeAre from '@/app/sections/WhoWeAre';
+import ProudBulgarians from './sections/ProudBulgarians';
 
 export default function Home() {
     return (
@@ -8,6 +10,7 @@ export default function Home() {
             <div className='flex flex-col items-center gap-[10%] py-10'>
               
                 <WhoWeAre />
+                <ProudBulgarians />
             </div>
         </main>
     );
