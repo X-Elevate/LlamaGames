@@ -1,4 +1,6 @@
+
 import type { Config } from "tailwindcss"
+
 
 const config = {
   darkMode: ["class"],
@@ -18,6 +20,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        dmMono: ['DM Mono', 'monospace'], // Custom font family, with a fallback
+      },
       colors: {
         cherry: "var(--cherry)",
         tonysPink: "var(--tonys-pink)",

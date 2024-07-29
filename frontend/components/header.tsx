@@ -21,7 +21,7 @@ export default function Header() {
           <p className="text-xs md:text-sm text-yellow-600">Technology</p>
         </div>
       </div>
-      <nav className="hidden md:flex gap-4 text-pink-700">
+      <nav className="hidden md:flex gap-4 text-cherry font-dmMono">
         <a href="#" className="hover:underline">
           About us
         </a>
