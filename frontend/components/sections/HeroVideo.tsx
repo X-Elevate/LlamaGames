@@ -10,8 +10,9 @@ export default function HeroVideo() {
     }, []);
 
     return (
-        <div className='relative w-full overflow-hidden'>
-            <video
+        <div className='relative h-1/5 w-full overflow-hidden'>
+            <img src="[DEL]VIDEO.jpeg" alt="" className='h-full w-full object-cover'/>
+            {/* <video
                 ref={videoRef}
                 className='absolute top-0 left-0 w-full h-full object-cover'
                 autoPlay
@@ -21,7 +22,7 @@ export default function HeroVideo() {
             >
                 <source src='/path-to-your-video.mp4' type='video/mp4' />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
         </div>
     );
 }
