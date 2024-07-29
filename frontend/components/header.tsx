@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header() {
   return (
@@ -11,8 +10,6 @@ export default function Header() {
           <img
             src="/header-logo.svg"
             alt="Logo"
-            width={38}
-            height={38}
             className="h-full w-full object-cover"
           />
         </div>
