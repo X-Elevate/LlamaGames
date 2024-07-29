@@ -8,11 +8,11 @@ export default function Header() {
         <header className='fixed top-0 left-0 right-0 z-10 backdrop-blur-sm bg-white/80 px-4 py-2 flex items-center justify-between md:px-6'>
             <div className='flex items-center'>
                 <Image
-                    src='./logo.svg'
+                    src='/logo.svg'
                     alt='Logo'
-                    width={32}
-                    height={32}
-                    className='md:w-12 md:h-12'
+                    width={38}
+                    height={38}
+                    className='md:w-16 md:h-16'
                 />
                 <div className='ml-2'>
                     <h1 className='text-lg md:text-xl font-bold'>LLAMAGAMES</h1>
