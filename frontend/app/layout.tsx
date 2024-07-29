@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter as FontSans } from 'next/font/google';
+import { DM_Mono as FontMono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
 import { cn } from '@/lib/utils';
 import Footer from '@/components/footer';
 
-const fontSans = FontSans({
+
+const fontMono = FontMono({
     subsets: ['latin'],
-    variable: '--font-sans',
+    weight: ['400', '500'],
+    variable: '--font-mono',
 });
 
 export const metadata: Metadata = {
@@ -24,8 +26,8 @@ export default function RootLayout({
         <html lang='en'>
             <body
                 className={cn(
-                    'min-h-screen bg-background font-sans antialiased',
-                    fontSans.variable
+                    'min-h-screen bg-background font-mono antialiased',
+                    fontMono.variable
                 )}
             >
                 <Header />
