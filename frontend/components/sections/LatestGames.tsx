@@ -25,14 +25,14 @@ function LatestGames() {
       <div className="absolute inset-0 z-20">
         <div className='before:content-[""] before:absolute before:bg-[#FFBF40] before:opacity-[0.10] before:rounded-full before:blur-lg before:w-[150px] before:h-[150px] before:top-[-20px] before:left-[-30px] sm:before:w-[200px] sm:before:h-[200px] sm:before:top-[-30px] sm:before:left-[-45px] md:before:w-[250px] md:before:h-[250px] md:before:top-[-40px] md:before:left-[-55px] lg:before:w-[300px] lg:before:h-[300px] lg:before:top-[-50px] lg:before:left-[-60px]'></div>
       </div>
-      <div className="relative flex flex-col gap-[1.5rem] w-[83%] mt-[2%] z-10">
+      <div className="relative flex flex-col gap-[1.5rem] w-[83%] mt-20 z-10">
         <h1 className="text-[2rem] text-orange">Latest games</h1>
         <p className="text-[1.5rem] text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore
         </p>
       </div>
-      <div className="relative flex flex-col items-center sm:flex-row w-full sm:w-[83%] gap-8 sm:gap-20 justify-center sm:justify-between pt-[2rem] z-10">
+      <div className="relative flex flex-col items-center sm:flex-row w-full sm:w-[83%] gap-8 sm:gap-20 justify-center sm:justify-between pt-[2rem] z-10 pb-14">
         {games.map((game, index) => (
           <div
             className="relative w-full max-w-[380px] h-[440px] aspect-square overflow-hidden p-[1rem]"
@@ -60,8 +60,8 @@ function LatestGames() {
           </div>
         ))}
       </div>
-      <div className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2">
-        <button className="bg-white text-black py-2 px-4 rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold">
+      <div className="absolute bottom-[-28px] left-1/2 transform -translate-x-1/2">
+        <button className="bg-white text-black py-2 px-4 rounded-xl shadow-lg whitespace-nowrap w-40 h-14 text-darkCherry font-semibold">
           Explore all
         </button>
       </div>
