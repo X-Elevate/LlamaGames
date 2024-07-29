@@ -19,6 +19,13 @@ const config = {
     },
     extend: {
       colors: {
+        cherry: "var(--cherry)",
+        tonysPink: "var(--tonys-pink)",
+        watus: "var(--watus)",
+        pink: "var(--pink)",
+        dutchWhite: "var(--dutch-white)",
+        darkCherry: "var(--dark-cherry)",
+        orange: "var(--orange)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
