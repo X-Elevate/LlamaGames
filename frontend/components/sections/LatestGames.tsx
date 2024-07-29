@@ -21,7 +21,7 @@ const games = [
 
 function LatestGames() {
   return (
-    <div className="relative w-full bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor mt-10 flex flex-col items-center font-dmMono pb-10 z-20 rounded-b-[80px]">
+    <div className="relative w-full bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor mt-10 flex flex-col items-center font-dmMono pb-[5rem] z-20 rounded-b-[80px]">
       <div className="absolute inset-0 z-20">
         <div className='before:content-[""] before:absolute before:bg-[#FFBF40] before:opacity-[0.10] before:rounded-full before:blur-lg before:w-[150px] before:h-[150px] before:top-[-20px] before:left-[-30px] sm:before:w-[200px] sm:before:h-[200px] sm:before:top-[-30px] sm:before:left-[-45px] md:before:w-[250px] md:before:h-[250px] md:before:top-[-40px] md:before:left-[-55px] lg:before:w-[300px] lg:before:h-[300px] lg:before:top-[-50px] lg:before:left-[-60px]'></div>
       </div>
@@ -47,10 +47,10 @@ function LatestGames() {
                   objectFit="cover"
                   className="rounded-[40px]"
                 />
-                <div className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2">
+                <div className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 shadow-lg">
                   <button
                     disabled
-                    className="bg-white text-black py-2 px-4 rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold"
+                    className="bg-white text-black py-3 px-4 rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold"
                   >
                     {game.name}
                   </button>
@@ -59,6 +59,11 @@ function LatestGames() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2">
+        <button className="bg-white text-black py-2 px-4 rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold">
+          Explore all
+        </button>
       </div>
     </div>
   );
