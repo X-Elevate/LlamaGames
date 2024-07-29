@@ -9,7 +9,7 @@ export default function Header() {
       <div className="flex items-center">
         <div className="h-full pt-4">
           <img
-            src="/logo.svg"
+            src="/header-logo.svg"
             alt="Logo"
             width={38}
             height={38}

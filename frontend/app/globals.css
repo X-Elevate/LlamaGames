@@ -38,6 +38,8 @@
     --cherry: #8a0b58;
     --dark-cherry: #3c1332;
     --orange: #ffae09;
+    --gradientFirstColor: #291463;
+    --gradientSecondColor: #541946;
   }
 
   .dark {

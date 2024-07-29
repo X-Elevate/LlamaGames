@@ -24,6 +24,8 @@ const config = {
         dmMono: ['DM Mono', 'monospace'], // Custom font family, with a fallback
       },
       colors: {
+        gradientFirstColor: "var(--gradientFirstColor)",
+        gradientSecondColor: "var(--gradientSecondColor)",
         cherry: "var(--cherry)",
         tonysPink: "var(--tonys-pink)",
         watus: "var(--watus)",
