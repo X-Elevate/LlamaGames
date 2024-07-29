@@ -31,7 +31,7 @@ export default function RootLayout({
                 )}
             >
                 <Header />
-                <main className='flex min-h-screen flex-col pt-[64px] md:pt-[72px]'>
+                <main className='flex min-h-screen flex-col'>
                     {children}
                 </main>
                 <Footer />
