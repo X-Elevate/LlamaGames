@@ -7,6 +7,7 @@ import Sertificates from '@/components/sections/Sertificates';
 import Slogan from '@/components/sections/Slogan';
 import LatestGames from '@/components/sections/LatestGames';
 import FAQ from '@/components/sections/FAQ';
+import OurPartners from '@/components/sections/OurPartners';
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
                 <LatestGames />
                 <Sertificates />
                 <Slogan />
+                <OurPartners />
                 <FAQ />
             </div>
         </main>
