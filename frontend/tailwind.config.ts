@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       colors: {
+        gradientFirstColor: "var(--gradientFirstColor)",
+        gradientSecondColor: "var(--gradientSecondColor)",
         cherry: "var(--cherry)",
         tonysPink: "var(--tonys-pink)",
         watus: "var(--watus)",
