@@ -41,6 +41,8 @@
         --orange: #ffae09;
         --gradientFirstColor: #291463;
         --gradientSecondColor: #541946;
+        --gradientThirdColor: #F0CDB7;
+        --gradientFourthColor: #D40099;
     }
 
     .dark {

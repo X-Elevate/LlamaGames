@@ -34,19 +34,27 @@ function LatestGames() {
       </div>
       <div className="relative flex w-[83%] gap-20 justify-between pt-[2rem] z-10">
         {games.map((game, index) => (
-          <div className="relative w-[380px] h-[440px] aspect-square overflow-hidden shadow-md rounded-[40px] bg-gradient-to-tr from-gradientFourthColor to-gradientThirdColor p-[1rem] " key={index}>
-            <div className="relative w-full h-full">
-              <Image
-                src={game.image}
-                alt={game.name}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-[40px]"
-              />
-              <div className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2">
-                <button disabled className="bg-white text-black py-2 px-4 rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold">
-                  {game.name}
-                </button>
+          <div
+            className="relative w-[380px] h-[440px] aspect-square overflow-hidden  p-[1rem] "
+            key={index}
+          >
+            <div className="relative w-full h-full bg-gradient-to-tr from-gradientThirdColor to-gradientFourthColor p-[1px] rounded-[40px] shadow-md">
+              <div className="relative w-full h-full">
+                <Image
+                  src={game.image}
+                  alt={game.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-[40px]"
+                />
+                <div className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2">
+                  <button
+                    disabled
+                    className="bg-white text-black py-2 px-4 rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold"
+                  >
+                    {game.name}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
