@@ -17,8 +17,8 @@ export default function Home() {
                 <ProudBulgarians />
                 <LatestGames />
                 <Sertificates />
-                <OurPartners />
                 <Slogan />
+                <OurPartners />
             </div>
         </main>
     );
