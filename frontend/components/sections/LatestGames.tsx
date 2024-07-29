@@ -21,7 +21,10 @@ const games = [
 
 function LatestGames() {
   return (
-    <div className="w-full bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor pt-10 flex flex-col items-center font-dmMono pb-8 rounded-b-[80px]">
+    <div className="w-full h-[900px] bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor mt-10 flex flex-col items-center font-dmMono ">
+      <div className="absolute inset-0 z-0">
+        <div className='before:content-[""] before:absolute before:bg-[#FFBF40] before:opacity-[0.10] before:rounded-full before:blur-lg before:w-[150px] before:h-[150px] before:top-[-20px] before:left-[-30px] sm:before:w-[200px] sm:before:h-[200px] sm:before:top-[-30px] sm:before:left-[-45px] md:before:w-[250px] md:before:h-[250px] md:before:top-[-40px] md:before:left-[-55px] lg:before:w-[300px] lg:before:h-[300px] lg:before:top-[-50px] lg:before:left-[-60px]'></div>
+      </div>
       <div className="flex flex-col gap-[1.5rem] w-[83%] mt-[2%]">
         <h1 className="text-[2rem] text-orange font-bold">Latest games</h1>
         <p className="text-[1.5rem] text-white">

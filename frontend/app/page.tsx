@@ -4,6 +4,8 @@ import WhoWeAre from '@/components/sections/WhoWeAre';
 import ProudBulgarians from '../components/sections/ProudBulgarians';
 import HeroVideo from '@/components/sections/HeroVideo';
 import LatestGames from '@/components/sections/LatestGames';
+import Sertificates from '@/components/sections/Sertificates';
+import LatestGames from '@/components/sections/LatestGames';
 
 export default function Home() {
     return (
@@ -13,6 +15,7 @@ export default function Home() {
                 <WhoWeAre />
                 <ProudBulgarians />
                 <LatestGames />
+                <Sertificates />
             </div>
         </main>
     );

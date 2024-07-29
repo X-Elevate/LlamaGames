@@ -5,7 +5,7 @@ export default function Footer() {
     const textColor = '#FFF4D6';
     return (
         <footer
-            className='bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor py-8 pt-20 px-4 h-[5%]'
+            className='bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor py-8 pt-20 px-4'
             style={{
                 borderTopLeftRadius: '5rem',
                 borderTopRightRadius: '5rem',
@@ -43,7 +43,10 @@ export default function Footer() {
                     />
                 </div>
 
-                <div className='flex space-x-7 justify-center items-center'>
+                <div className='relative flex space-x-7 justify-center items-center'>
+                    {/* <div className='absolute w-full h-full'>
+                        <div className='before:content-[""] before:absolute before:bg-[#FFBF40] before:opacity-[0.05] before:rounded-full before:blur-lg before:w-[50px] before:h-[50px] before:top-0 before:left-1/2 before:transform before:-translate-x-1/2 sm:before:w-[200px] sm:before:h-[200px] sm:before:top-[-20px] md:before:w-[250px] md:before:h-[250px] md:before:top-[-40px] lg:before:w-[300px] lg:before:h-[300px] lg:before:top-[-50px]'></div>
+                    </div> */}
                     <SocialIcon href='#' icon='linkedin' />
                     <SocialIcon href='#' icon='facebook' />
                     <SocialIcon href='#' icon='twitter' />
@@ -52,7 +55,7 @@ export default function Footer() {
             </div>
 
             <div
-                className='border-t mt-8 pt-4 text-center text-xs flex justify-center items-center '
+                className='border-t mt-8 pt-4 text-center text-xs flex justify-center items-center'
                 style={{ borderColor: '#D1D4D7', gap: '24px' }}
             >
                 <p>© Copyright 2024 LLama Games / All rights reserved.</p>
