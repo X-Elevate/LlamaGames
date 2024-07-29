@@ -3,6 +3,7 @@
 import WhoWeAre from '@/components/sections/WhoWeAre';
 import ProudBulgarians from '../components/sections/ProudBulgarians';
 import HeroVideo from '@/components/sections/HeroVideo';
+import LatestGames from '@/components/sections/LatestGames';
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
                 <HeroVideo />
                 <WhoWeAre />
                 <ProudBulgarians />
+                <LatestGames />
             </div>
         </main>
     );
