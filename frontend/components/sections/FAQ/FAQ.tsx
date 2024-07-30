@@ -20,7 +20,7 @@ export default function FAQ() {
 
             <ul className='w-[60%]'>
                 {faqData.map((faq, index) => (
-                    <Accordion className='rounded-2xl border-[1px] border-[#F0CDB7] mb-4 shadow-none' type='single' collapsible key={index}>
+                    <Accordion className='rounded-2xl border-[1px] border-[#F0CDB7] mb-4 pb-4 shadow-none' type='single' collapsible key={index}>
                         <AccordionItem value={`item-${index}`}>
                             <AccordionTrigger className='mx-4 text-left text-cherry'>
                                 {faq.question}
