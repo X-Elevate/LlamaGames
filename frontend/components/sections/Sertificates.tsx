@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function Certificates() {
   return (
-    <section className="w-full px-4 sm:px-8 md:w-[90%] lg:w-[80%] mx-auto flex flex-col gap-4 items-center justify-between">
+    <section className="w-full px-4 sm:px-8 md:w-[90%] lg:w-[80%] mx-auto flex flex-col gap-4 items-center justify-between z-200">
       <h2 className="text-cherry text-2xl sm:text-3xl md:text-[32px] text-center sm:text-left w-full font-bold pb-6 sm:pb-10">
-        You're in good company
+        You&rsquo;re in good company
       </h2>
       <ul className="flex flex-col sm:flex-row w-full justify-evenly gap-8 sm:gap-4">
         {[1, 2, 3].map((item) => (

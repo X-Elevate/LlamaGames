@@ -1,8 +1,8 @@
 import React from "react";
 
 enum Possition {
-    top = "top",
-    bottom = "bottom"
+  top = "top",
+  bottom = "bottom",
 }
 
 const TimelineEvent = ({
@@ -15,6 +15,9 @@ const TimelineEvent = ({
   position: Possition;
 }) => (
   <div className="flex flex-col items-center text-cherry">
+    <div className="absolute inset-0 ">
+      <div className='before:content-[""] before:absolute before:bg-[#8600D826] before:opacity-[15%] before:rounded-full before:blur-md before:w-[210px] before:h-[210px] before:top-[-100px] before:left-[-400px]'></div>
+    </div>
     <div className="flex flex-col items-center">
       <div className="w-4 h-4 bg-cherry rounded-full relative z-10">
         <div className="w-7 h-7 border-4 border-cherry rounded-full absolute top-[1/2] left-1/2 transform -translate-x-1/2 -translate-y-[20%]"></div>
@@ -30,25 +33,49 @@ const TimelineEvent = ({
           />
         </div>
 
-         <div className={`font-bold absolute transform -translate-x-[30%] ${position === "bottom" ? "bottom-6" : "top-6"}`}>{year}</div>
-
-         
+        <div
+          className={`font-bold absolute transform -translate-x-[30%] ${
+            position === "bottom" ? "bottom-6" : "top-6"
+          }`}
+        >
+          {year}
+        </div>
       </div>
     </div>
-    <p className={`text-wrap text-center w-1/5 md:w-max text-sm absolute transform ${position === Possition.bottom ? "translate-y-[110%] md:translate-y-[500%]" : "-translate-y-[220%] md:-translate-y-[500%]"}`}>{text}</p>
+    <p
+      className={`text-wrap text-center w-1/5 md:w-max text-sm absolute transform ${
+        position === Possition.bottom
+          ? "translate-y-[110%] md:translate-y-[500%]"
+          : "-translate-y-[220%] md:-translate-y-[500%]"
+      }`}
+    >
+      {text}
+    </p>
   </div>
 );
 
 const Timeline = () => {
   const events = [
-    { year: 2019, text: "Sunt nostrud amet sint do", position: Possition.bottom  },
-    { year: 2020, text: "Exercitation veniam consequat", position: Possition.top },
+    {
+      year: 2019,
+      text: "Sunt nostrud amet sint do",
+      position: Possition.bottom,
+    },
+    {
+      year: 2020,
+      text: "Exercitation veniam consequat",
+      position: Possition.top,
+    },
     {
       year: 2021,
       text: "Velit officia consequat duis",
       position: Possition.bottom,
     },
-    { year: 2022, text: "Ullamco est sit aliqua dolor", position: Possition.top },
+    {
+      year: 2022,
+      text: "Ullamco est sit aliqua dolor",
+      position: Possition.top,
+    },
     {
       year: 2023,
       text: "Amet minim mollit non deserunt",
@@ -66,6 +93,7 @@ const Timeline = () => {
               text={event.text}
               year={event.year}
               position={event.position}
+              key={index}
             />
           ))}
         </div>

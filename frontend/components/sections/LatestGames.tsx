@@ -22,8 +22,14 @@ const games = [
 function LatestGames() {
   return (
     <div className="relative w-full bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor mt-10 flex flex-col items-center font-dmMono pb-[5rem] z-20 rounded-b-[80px]">
-      <div className="absolute inset-0 z-20">
-        <div className='before:content-[""] before:absolute before:bg-[#FFBF40] before:opacity-[0.10] before:rounded-full before:blur-lg before:w-[150px] before:h-[150px] before:top-[-20px] before:left-[-30px] sm:before:w-[200px] sm:before:h-[200px] sm:before:top-[-30px] sm:before:left-[-45px] md:before:w-[250px] md:before:h-[250px] md:before:top-[-40px] md:before:left-[-55px] lg:before:w-[300px] lg:before:h-[300px] lg:before:top-[-50px] lg:before:left-[-60px]'></div>
+      <div className="absolute inset-0">
+        <div className='before:content-[""] before:absolute before:bg-[#8600D84D] before:opacity-[12%] before:rounded-full before:blur-lg before:w-[220px] before:h-[220px] before:top-[130px] before:left-[-30px]'></div>
+      </div>
+      <div className="absolute inset-0">
+        <div className='before:content-[""] before:absolute before:bg-[#FF81F9] before:opacity-[22%] before:rounded-full before:blur-lg before:w-[450px] before:h-[450px] before:top-[230px] before:left-[1000px]'></div>
+      </div>
+      <div className="absolute inset-0">
+        <div className='before:content-[""] before:absolute before:bg-[#9300D84D] before:opacity-[30%] before:rounded-full before:blur-lg before:w-[280px] before:h-[280px] before:top-[550px] before:left-[1650px]'></div>
       </div>
       <div className="relative flex flex-col gap-[1.5rem] w-[83%] mt-20 z-10">
         <h1 className="text-[2rem] text-orange">Latest games</h1>
@@ -44,13 +50,12 @@ function LatestGames() {
                   src={game.image}
                   alt={game.name}
                   layout="fill"
-                  objectFit="cover"
                   className="rounded-[40px]"
                 />
                 <div className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 shadow-lg">
                   <button
                     disabled
-                    className="bg-white text-black py-3 px-4 rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold"
+                    className="bg-white text-black py-3 px-7 text-xl rounded-xl shadow-lg whitespace-nowrap text-darkCherry font-semibold"
                   >
                     {game.name}
                   </button>
