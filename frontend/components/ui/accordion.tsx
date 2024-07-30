@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDown, Minus, Plus } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -14,7 +14,7 @@ const AccordionItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={cn("border-b transition-all data-[state=open]:bg-[#FFF4D6] rounded-2xl", className)}
+    className={cn("border-b transition-all data-[state=open]:bg-[#FFF4D6] rounded-2xl relative", className)}
     {...props}
   />
 ));
@@ -28,17 +28,18 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-col items-start py-4 font-medium transition-all data-[state=open]:bg-[#FFF4D6]",
+        "flex flex-col items-start py-4 font-medium transition-all data-[state=open]:bg-[#FFF4D6] [&[data-state=closed]>svg:nth-child(2)]:hidden",
         className
       )}
       {...props}
     >
-      <span className="flex-1">{children}</span>
-      <div className="flex justify-center mt-2">
-        {/* Ensure proper use of data-state attribute */}
-        <Minus className="h-4 w-4 text-cherry shrink-0 transition-transform duration-200 data-[state=open]:block data-[state=closed]:hidden hidden" /> {/* fix behaviour */}
-        <Plus className="h-4 w-4 text-cherry shrink-0 transition-transform duration-200 data-[state=open]:hidden data-[state=closed]:block block" />
-      </div>
+      <span className="flex-1">
+        {children}
+      </span>
+        <Minus className="h-4 w-4 text-cherry shrink-0 transition-transform duration-200 absolute bottom-0" id="minus"/>
+        <Plus className="h-4 w-4 text-cherry shrink-0 transition-transform duration-200 absolute bottom-0" id="plus"/>
+
+
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
