@@ -18,9 +18,10 @@ export default function FAQ() {
                 </p>
             </div>
 
-            <ul className='w-[60%]'>
+            <ul className='w-[60%] flex flex-col gap-4'>
                 {faqData.map((faq, index) => (
-                    <Accordion className='rounded-2xl border-[1px] border-[#F0CDB7] mb-4 pb-4 shadow-none' type='single' collapsible key={index}>
+                  
+                    <Accordion className='h-full rounded-2xl border-[1px] border-[#F0CDB7]   shadow-none' type='single' collapsible key={index}>
                         <AccordionItem value={`item-${index}`}>
                             <AccordionTrigger className='mx-4 text-left text-cherry'>
                                 {faq.question}
@@ -30,6 +31,7 @@ export default function FAQ() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
+                  
                 ))}
                 <span className='text-orange underline underline-offset-2 text-base font-medium hover:cursor-pointer'>
                     Learn more
