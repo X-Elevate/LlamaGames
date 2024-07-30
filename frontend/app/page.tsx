@@ -8,6 +8,7 @@ import Slogan from '@/components/sections/Slogan';
 import LatestGames from '@/components/sections/LatestGames';
 import FAQ from '@/components/sections/FAQ/FAQ';
 import OurPartners from '@/components/sections/OurPartners';
+import Timeline from '@/components/sections/Timeline';
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
                 <ProudBulgarians />
                 <LatestGames />
                 <Sertificates />
+                <Timeline />
                 <Slogan />
                 <OurPartners />
                 <FAQ />
