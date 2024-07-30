@@ -57,8 +57,8 @@ const Timeline = () => {
   ];
 
   return (
-    <section className="bg-[#F0CDB7] p-36 rounded-b-[80px] w-full h-[32rem] flex items-center justify-center">
-      <div className="relative py-8 w-full px-36">
+    <section className="bg-[#F0CDB7] p-12 md:p-36 rounded-b-[80px] w-full h-[32rem] flex items-center justify-center">
+      <div className="relative py-8 w-full md:px-36">
         <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-darkCherry transform -translate-y-1/2"></div>
         <div className="flex justify-between relative z-10">
           {events.map((event, index) => (

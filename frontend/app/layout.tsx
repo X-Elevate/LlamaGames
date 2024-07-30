@@ -29,7 +29,7 @@ export default function RootLayout({
       </Head>
       <body
         className={cn(
-          "min-h-screen bg-background font-mono antialiased",
+          "min-h-screen bg-background font-mono antialiased w-full overflow-x-hidden",
           fontMono.variable
         )}
       >

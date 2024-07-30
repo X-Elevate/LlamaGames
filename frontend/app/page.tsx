@@ -13,7 +13,7 @@ import Timeline from '@/components/sections/Timeline';
 export default function Home() {
     return (
         <main className='flex min-h-screen flex-col items-center justify-between'>
-            <div className='flex flex-col items-center gap-24 pb-10 w-full'>
+            <div className='flex flex-col items-center gap-24 pb-10 w-full overflow-x-hidden'>
                 <HeroVideo />
                 <WhoWeAre />
                 <ProudBulgarians />
