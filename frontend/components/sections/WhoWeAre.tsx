@@ -12,7 +12,7 @@ export default function WhoWeAre() {
             </div>
             <div className='w-full md:w-[45%] relative text-left'>
                 <div className='absolute inset-0'>
-                    <div className='before:content-[""] before:absolute before:bg-[#FFBF40] before:opacity-[0.10] before:rounded-full before:blur-lg before:w-[200px] before:h-[200px] before:top-[-40px] before:left-[-30px] sm:before:w-[300px] sm:before:h-[300px] sm:before:top-[-60px] sm:before:left-[-45px] md:before:w-[400px] md:before:h-[400px] md:before:top-[-70px] md:before:left-[-55px] lg:before:w-[470px] lg:before:h-[470px] lg:before:top-[-80px] lg:before:left-[-60px]'></div>
+                    <div className='before:content-[""] before:absolute before:bg-[#FFBF40] before:opacity-[12%] before:rounded-full before:blur-lg before:w-[200px] before:h-[200px] before:top-[-40px] before:left-[-30px] sm:before:w-[250px] sm:before:h-[250px] sm:before:top-[-140px] sm:before:left-[30px] md:before:w-[320px] md:before:h-[320px] md:before:top-[-200px] md:before:left-[30px] lg:before:w-[470px] lg:before:h-[470px] lg:before:top-[-350px] lg:before:left-[30px]'></div>
                 </div>
                 <h2 className='relative text-2xl text-cherry text-pink-500 mb-4 font-bold'>
                     Who we are
