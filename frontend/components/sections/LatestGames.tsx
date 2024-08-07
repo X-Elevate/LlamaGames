@@ -21,7 +21,7 @@ const games = [
 
 function LatestGames() {
   return (
-    <div className="relative w-full bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor mt-10 flex flex-col items-center font-dmMono pb-[5rem] z-20 rounded-b-[80px]">
+    <div id="games" className="section-offset relative w-full bg-gradient-to-tr from-gradientFirstColor to-gradientSecondColor mt-10 flex flex-col items-center font-dmMono pb-[5rem] z-20 rounded-b-[80px]">
       <div className="absolute inset-0">
         <div className='before:content-[""] before:absolute before:bg-[#8600D84D] before:opacity-[12%] before:rounded-full before:blur-lg before:w-[220px] before:h-[220px] before:top-[130px] before:left-[-30px]'></div>
       </div>

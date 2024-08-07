@@ -2,7 +2,7 @@
 
 export default function WhoWeAre() {
     return (
-        <section className='w-[90%] md:ml-0 md:mr-auto m-auto flex  gap-4 md:gap-10 items-center md:items-center justify-between'>
+        <section id="about-us" className='section-offset w-[90%] md:ml-0 md:mr-auto m-auto flex  gap-4 md:gap-10 items-center md:items-center justify-between'>
             <div className='w-[45%]'>
                 <img
                     src='/WhoWeAre_lamas.svg'

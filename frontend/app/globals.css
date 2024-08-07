@@ -6,6 +6,7 @@
 
 @layer base {
     :root {
+        scroll-behavior: smooth;
         --font-mono: 'DM Mono', monospace;
         --background: 0 0% 100%;
         --foreground: 222.2 84% 4.9%;
@@ -41,8 +42,8 @@
         --orange: #ffae09;
         --gradientFirstColor: #291463;
         --gradientSecondColor: #541946;
-        --gradientThirdColor: #F0CDB7;
-        --gradientFourthColor: #D40099;
+        --gradientThirdColor: #f0cdb7;
+        --gradientFourthColor: #d40099;
     }
 
     .dark {
@@ -82,3 +83,11 @@
         @apply bg-background text-foreground;
     }
 }
+
+.section-offset {
+    position: relative;
+    padding-top: 115px; /* Adjust based on the actual navbar height */
+    margin-top: -115px; /* This should be the same as padding-top */
+}
+
+

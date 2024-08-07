@@ -1,8 +1,17 @@
+"use client"
+
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet';
 import Link from 'next/link';
 
 export default function Header() {
+    // State to manage the visibility of the sheet
+    const [isSheetOpen, setIsSheetOpen] = useState(false);
+
+    // Function to handle closing the sheet
+    const closeSheet = () => setIsSheetOpen(false);
+
     return (
         <header className='fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-white/50 px-[9%] flex items-center justify-between rounded-bl-[32px] w-full overflow-hidden'>
             <div className='flex items-center'>
@@ -25,24 +34,24 @@ export default function Header() {
                 </div>
             </div>
             <nav className='hidden md:flex gap-4 text-cherry text-base font-medium'>
-                <a href='#' className='hover:underline'>
+                <a href='#about-us' className='hover:underline'>
                     About us
                 </a>
-                <a href='#' className='hover:underline'>
+                <a href='#games' className='hover:underline'>
                     Games
                 </a>
-                <a href='#' className='hover:underline'>
+                <a href='#licensing' className='hover:underline'>
                     Licensing
                 </a>
-                <a href='#' className='hover:underline'>
+                <a href='#milestones' className='hover:underline'>
                     Milestones
                 </a>
-                <a href='#' className='hover:underline'>
+                <a href='#mission' className='hover:underline'>
                     Mission
                 </a>
             </nav>
             <div className='md:hidden'>
-                <Sheet>
+                <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                     <SheetTrigger asChild>
                         <Button variant='ghost' size='icon'>
                             <MenuIcon className='h-6 w-6' />
@@ -54,37 +63,42 @@ export default function Header() {
                     <SheetContent side='left'>
                         <nav className='grid gap-4 py-6'>
                             <Link
-                                href='#'
+                                href='#about-us'
                                 className='flex w-full items-center py-2 text-lg font-semibold'
                                 prefetch={false}
+                                onClick={closeSheet}
                             >
                                 About us
                             </Link>
                             <Link
-                                href='#'
+                                href='#games'
                                 className='flex w-full items-center py-2 text-lg font-semibold'
                                 prefetch={false}
+                                onClick={closeSheet}
                             >
                                 Games
                             </Link>
                             <Link
-                                href='#'
+                                href='#licensing'
                                 className='flex w-full items-center py-2 text-lg font-semibold'
                                 prefetch={false}
+                                onClick={closeSheet}
                             >
                                 Licensing
                             </Link>
                             <Link
-                                href='#'
+                                href='#milestones'
                                 className='flex w-full items-center py-2 text-lg font-semibold'
                                 prefetch={false}
+                                onClick={closeSheet}
                             >
                                 Milestones
                             </Link>
                             <Link
-                                href='#'
+                                href='#mission'
                                 className='flex w-full items-center py-2 text-lg font-semibold'
                                 prefetch={false}
+                                onClick={closeSheet}
                             >
                                 Mission
                             </Link>

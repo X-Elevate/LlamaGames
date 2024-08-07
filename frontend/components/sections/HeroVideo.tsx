@@ -10,7 +10,7 @@ export default function HeroVideo() {
     }, []);
 
     return (
-        <div className='relative h-1/5 w-full overflow-hidden'>
+        <div id='hero' className='section-offset relative h-1/5 w-full overflow-hidden'>
             <img src="[DEL]VIDEO.jpeg" alt="" className='h-full w-full object-cover'/>
             {/* <video
                 ref={videoRef}

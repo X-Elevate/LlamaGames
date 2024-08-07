@@ -2,7 +2,7 @@
 
 export default function Slogan() {
   return (
-    <section className="w-[80%] flex flex-row gap-4 items-center justify-between">
+    <section id="mission" className="section-offset w-[80%] flex flex-row gap-4 items-center justify-between">
       <div className="w-1/2 relative">
 
         <h2 className="relative text-[32px] font-medium text-cherry pb-6 w-[85%]">
